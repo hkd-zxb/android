@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rb_taobao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_first_selector"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@color/grey"
+            android:padding="10dp" />
+
+        <RadioButton
+            android:id="@+id/rb_guangguang"
+            style="@style/TabButton"
+            android:text="逛逛"
+            android:textColor="@color/grey"
+            android:drawableTop="@drawable/tab_second_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_xiaoxi"
+            style="@style/TabButton"
+            android:text="消息"
+            android:textColor="@color/grey"
+            android:drawableTop="@drawable/tab_third_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_gouwuche"
+            style="@style/TabButton"
+            android:text="购物车"
+            android:textColor="@color/grey"
+            android:drawableTop="@drawable/tab_fourth_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/TabButton"
+            android:text="我的淘宝"
+            android:textColor="@color/grey"
+            android:drawableTop="@drawable/tab_fifth_selector" />
+
+    </RadioGroup>
+
+</LinearLayout>
